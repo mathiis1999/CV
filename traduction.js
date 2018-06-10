@@ -103,6 +103,18 @@ var dict = {
 		"fr":"Wavre",
 		"en":"Waver",
 	},
+	"month":{
+		"fr":"mois",
+		"en":"months"
+	},
+	"emakina":{
+		"fr":"Stage chez Emakina",
+		"en":"Internship at Emakina"
+	},
+	"emakina_content":{
+		"fr":"<li>Mémoire : \"Réalisation d'un outil permettant de tester le comportement d'une application via le protocole WebSocket\"</li><li>Développement d'une application ES6 utilisant Electron, React et Socket.IO</li></ul>",
+		"en":"<li>Thesis : \"Develop a tool to test an application behavior via WebSocket\"</li><li>Develop an ES6 application using Electron, React and Socket.IO</li></ul>"
+	}
 };
 
 var valid_languages = ["fr","en"];

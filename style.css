@@ -146,6 +146,8 @@ a{
 
 @media print
 {
+	.invertColorOnPrint{filter: invert(100%) !important}
+	.greyOnPrint{filter: grayscale(100%);}
     .noPrint{display:none;}
     .noScreen{}
 }
@@ -185,4 +187,11 @@ a{
 
 #section_contact a{
 	color: inherit;
+}
+
+.black{
+	background-color: black !important;
+}
+.pink{
+	background-color: rgb(193, 0, 97) !important;
 }
