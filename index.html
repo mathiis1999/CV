@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mathias Michelet</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="timeline2.css">
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="script.js"></script>
+	<!--<script type="text/javascript" src="traduction.js"></script>-->
+
+</head>
+<body id="body">
+	<!--<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">Antonin Riche</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Compétences</a>
+			  </li>
+			</ul>
+		</div>
+	</nav>-->
+
+	<div class="container-fluid primary" id="section_head">
+		<!--<div class="pull-right row noPrint">
+			<select class="form-control" id="lang_field">
+				<option value="fr">FR</option>
+				<option value="en">EN</option>
+			</select>
+		</div>-->
+		<div class="container">
+			<img src="id.JPG" class="image-circle">
+			<h1>Job étudiant : Jardins de Bi'OK</h1>
+			<h2>Mathias Michelet - 19 ans</h2>
+			<h3> - </h3>
+			<!--<h2 traduction="dev">- Développeur -</h2>-->
+			<div>
+					<a href="mailto:michelet.mathias@gmail.com" ><i class="fa fa-envelope-o"></i> michelet.mathias@gmail.com</a><br>
+					<a href="tel:+32486605598" ><i class="fa fa-phone"></i> +32 486 60 55 98</a>
+			</div>
+			<br>
+			<div>
+				Rue des monts, 34<br>
+				1390 Archennes – <span traduction="belgium">Belgique</span>
+
+			</div>
+
+			<div id="editor"></div>
+			<div class="noPrint">
+				<!--<a href="CV.pdf" target="_blank">-->
+				<button class="btn btn-outline-light" id="download" ><i class="fa fa-print"></i> <span traduction="download" onclick="print()">Imprimer</span></button>
+				<!--</a>-->
+			</div>
+			<div class="noScreen">
+				<br>
+				<button class="btn btn-outline-dark"><a>mathiis1999.github.io/CV/</a></button>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid contrast" id="section_skills">
+		<div class="container" style="padding-left: 0px;">
+			<h1 traduction="skills">Compétences relatives au maraichage</h1>
+			<div class="row noPrint">
+				<div class="col-sm-3 cell">
+ 					<b class="skill">Une certaine compréhension de ce que sont la permaculture et la biodynamie, ainsi qu'une première expérience dans le maraichage selon ces principes (voir wwoofing ci-dessous)</b>
+				</div>
+				<div class="col-sm-3 cell">
+ 					<b class="skill">Un contact avec Grez en Transition : les paniers bio de l'agriculteur Hermann, de Néthen, ont été livrés un an chez mes parents, qui tenaient aussi un comptoir de "blés", la monnaie locale de la commune de Grez-Doiceau</b>
+				</div>
+				<div class="col-sm-3 cell">
+					<b class="skill">Une grande sensibilité à l'alimentation bio depuis l'enfance, un forte tendance à cuisiner et manger bio et local au maximum</b>
+				</div>
+				<div class="col-sm-3 cell">
+ 					<b class="skill">Une initiation à l'apiculture par un apiculteur qui a posé quelques ruches au village</b>
+				</div>
+			</div>
+			<div class="noScreen" id="print_skills"></div>
+		</div>
+	</div>
+	<!--<span class="noPrint"><hr></span>-->
+
+	<div class="container-fluid primary" id="section_langue">
+		<div class="container">
+			<h1 traduction="languages" >Langues</h1>
+			<div class="noPrint" id="languages_screen">
+				<div class="row cell">
+					<div class="col-sm-2">
+						<span traduction="french" >Français</span>
+					</div>
+					<div class="col-sm-10">
+						<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 100%; background-color: gray;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+									<b traduction="mother-tongue">Langue Maternelle</b>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="row cell">
+					<div class="col-sm-2" >
+						<span traduction="english" >Anglais</span>
+					</div>
+					<div class="col-sm-10">
+						<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 80%;background-color: gray;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+									<b>Très bonne maîtrise</span></b>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="row cell">
+					<div class="col-sm-2" >
+						<span traduction="english" >Néerlandais</span>
+					</div>
+					<div class="col-sm-10">
+						<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 15%;background-color: gray;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+									<b>Débutant</span></b>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="row cell">
+					<div class="col-sm-2" >
+						<span traduction="english" >Japonais</span>
+					</div>
+					<div class="col-sm-10">
+						<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 10%;background-color: gray;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+									<b>Débutant</span></b>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="noPrint languages_print" id="languages_print">
+				<center>
+					<table>
+						<tr>
+							<td><b><span traduction="french" >Français</span></b></td>
+							<td><b><span traduction="english" >Anglais</span></b></td>
+							<td><b><span traduction="english" >Néerlandais</span></b></td>
+							<td><b><span traduction="english" >Japonais</span></b></td>
+						</tr>
+						<tr>
+							<td><span traduction="mother-tongue" >Langue Maternelle</span></td>
+							<td>Très bonne maîtrise</td>
+							<td>Débutant</td>
+							<td>Débutant</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+			<div class="noScreen languages_print">
+				<center>
+					<table>
+						<tr>
+							<td><b><span traduction="french" >Français</span></b></td>
+							<td><b><span traduction="english" >Anglais</span></b></td>
+							<td><b><span traduction="english" >Néerlandais</span></b></td>
+							<td><b><span traduction="english" >Japonais</span></b></td>
+						</tr>
+						<tr>
+							<td><span traduction="mother-tongue" >Langue Maternelle</span></td>
+							<td>Très bonne maitrise</td>
+							<td>Débutant</td>
+							<td>Débutant</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid contrast" id="section_soft_skills">
+		<div class="container">
+			<h2 traduction="soft_skills" >Atouts</h2>
+			<ul style="list-style: none; padding-left: 0px; margin-top: 30px;">
+				<li traduction="Curious">Toujours désireux d'apprendre</li>
+				<li traduction="Open minded">Ouvert d'esprit</li>
+				<li traduction="persistent" >Diligent</li>
+				<li traduction="reliable">Ponctuel</li>
+				<li traduction="challenge">Avide de nouvelles expériences</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container-fluid primary" id="section_experience">
+		<div class="container">
+			<h1 traduction="experience">Parcours</h1>
+
+			<ul class="timeline">
+				<li>
+					<div class="timeline-badge white"><img class="greyOnPrint" style="margin-top: -5px;" width=40 src="images/woofing.png" /></div>
+					<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title">Wwoofing</h4>
+						<p><small class="text-muted"><i class="fa fa-calendar"></i> 2018
+						<span style="margin-right: 50px;"></span>
+						<i class="fa fa-map-marker"></i> <span traduction="waver">Écosse</span></small></p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							<ul class="timeline-list">
+								<li traduction="ipes_content"> <a href="https://sacredlivingearthtrust.org" class="link">Sacred Living Earth Trust</a> : 100 heures de travail dans une ferme en permaculture et biodynamie en semi-autarcie, hors-réseau</li>
+							</ul>
+						</p>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><img class="greyOnPrint" style="margin-top: -5px;" width=40 src="images/festival.png" /></div>
+					<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title">Bénévolat en festival</h4>
+						<p><small class="text-muted"><i class="fa fa-calendar"></i> 2018
+						<span style="margin-right: 50px;"></span>
+						<i class="fa fa-map-marker"></i> <span traduction="waver">Enghien, Chiny</span></small></p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							<ul class="timeline-list">
+								<li traduction="ipes_content"><a href="https://www.lasemo.be/mission-valeurs/" class="link">LaSemo</a> (Enghien) : Maintien de la propreté du site </li>
+								<li>Festival du conte de Chiny : bénévole pour le <a href="https://www.cncd.be/-campagne-justice-migratoire-" class="link">CNCD 11.11.11</a>, thématique de la justice migratoire</li>
+							</ul>
+						</p>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><img class="greyOnPrint" style="margin-top: -5px;" width=40 src="images/UCL.png" /></div>
+					<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title" traduction="ipl" >Université Catholique de Louvain - Philosophie</h4>
+						<p><small class="text-muted"><i class="fa fa-calendar"></i> 2017 - 2018
+						<span style="margin-right: 50px;"></span>
+						<i class="fa fa-map-marker"></i> <span traduction="brussels">Louvain-la-Neuve</span></small></p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							<ul class="timeline-list" traduction="ipl_content">
+								<li>Introduction à la philosphie</li>
+								<li>Ouverture d'esprit, Esprit critique & introspection</li>
+								<li>Kot à projet : <a href="http://kapuclouvain.be/portfolio-items/kot-jeunes-et-nature/"><u class="link">Jeunes et Nature</u></a></li>
+							</ul>
+						</p>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><img class="greyOnPrint" style="margin-top: -5px;" width=40 src="images/cndbw.png" /></div>
+					<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title">Collège Notre-Dame de Basse-Wavre</h4>
+						<p><small class="text-muted"><i class="fa fa-calendar"></i> 2017
+						<span style="margin-right: 50px;"></span>
+						<i class="fa fa-map-marker"></i> <span traduction="waver">Basse-Wavre</span></small></p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							<ul class="timeline-list">
+								<li traduction="ipes_content">Diplôme d'enseignement secondaire général</li>
+								<li>Option économie : stage chez <a href="http://www.peoplescolor.eu"><u class="link">People's Color</u></a> (en vente et gestion)</li>
+								<li>Un trimestre en immersion anglophone (Canada)</li>
+							</ul>
+						</p>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><img class="greyOnPrint" style="margin-top: -5px;" width=35 src="images/guitar.png" /></div>
+					<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title">Music Action</h4>
+						<p><small class="text-muted"><i class="fa fa-calendar"></i> 2013-2017
+						<span style="margin-right: 50px;"></span>
+						<i class="fa fa-map-marker"></i> <span traduction="waver">Hamme-Mille</span></small></p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							<ul class="timeline-list">
+								<li traduction="ipes_content">5 ans d'étude de guitare, dont la dernière année en cursus professionnalisant</li>
+								<li class="noPrint"><a href="http://www.musicactionpro.be/FR/guitare.awp" class="link">Site de MusicAction</a></li>
+							</ul>
+						</p>
+					</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--<div class="container-fluid" id="section4">
+		<div class="container">
+			<h1>Portfolio</h1>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6" >
+					<a href="http://bonachatmaurice.com">
+						<div class="mycard">
+							<img class="card-img-top" src="portfolio/bonachatmaurice.com.jpg" alt="Card image cap"><br>
+							<center>bonachatmaurice.com</center>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>-->
+
+	<div class="container-fluid contrast" id="section_contact">
+		<div class="container">
+			<h1>Contact</h1>
+				<!--<div class="noPrint">
+					<form>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="contact_name">Nom : </label>
+									<input type="text" class="form-control" id="contact_name" aria-describedby="name" placeholder="Votre nom">
+								</div>
+								<div class="form-group">
+									<label for="contact_email">Email : </label>
+									<input type="email" class="form-control" id="contact_email" aria-describedby="email" placeholder="Votre email">
+								</div>
+								<button class="btn btn-outline-light" id="sendButon">Envoyer</button>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="contact_message">Message : </label>
+									<textarea class="form-control" id="contact_message" rows="10"></textarea>
+								</div>
+							</div>
+						</div>
+					</form>
+					<hr>
+				</div>-->
+			<center>
+				<ul>
+					<li><a href="mailto:michelet.mathias@gmail.com"><i class="fa fa-envelope-o"></i> michelet.mathias@gmail.com</li>
+					<li><a href="tel:+32486605598"><i class="fa fa-phone"></i> +32 486 60 55 98</li>
+				</ul>
+			</center>
+
+		</div>
+		<!--<hr>-->
+	</div>
+
+
+</body>
+</html>
