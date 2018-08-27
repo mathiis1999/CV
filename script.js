@@ -4,9 +4,9 @@ $(function(){
 	html+= "<table style='width: 100%;table-layout: fixed;'><tr>";
 	$(".skill").each(function(){
 		//alert($(this).text());
-		html += "<td>"+$(this).text()+"</td>";
+		html += "<td valign='top' align='left' style='padding: 10px; "+(i%2==1?"border-left: solid 1px;":"")+"'>"+$(this).text()+"</td>";
 		i++;
-		if(i%3 == 0)html+="</tr><tr>";
+		if(i%2 == 0)html+="</tr><tr>";
 	});
 	html+="</tr></table>";
 	$("#print_skills").html(html);

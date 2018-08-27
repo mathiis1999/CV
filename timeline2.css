@@ -109,7 +109,7 @@
   margin-top: 0;
   color: inherit;
 }
-.timeline-body{
+.timeline > li{
   page-break-inside:avoid;
 }
 .timeline-body > p,

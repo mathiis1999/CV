@@ -1,5 +1,5 @@
 :root {
-  --primary-color: firebrick;
+  --primary-color: darkolivegreen;
 
   --contrast-color: white;
   --contrast-color2: lightgrey;
@@ -141,7 +141,10 @@ a{
 @media screen
 {
     .noPrint{}
-    .noScreen{display:none;}
+	.noScreen{display:none;}
+	.link{
+		text-decoration: underline;
+	}
 }
 
 @media print
@@ -150,6 +153,10 @@ a{
 	.greyOnPrint{filter: grayscale(100%);}
     .noPrint{display:none;}
     .noScreen{}
+	.link{text-decoration: none;}
+	.text-muted{
+		color: initial !important;
+	}
 }
 
 @media print{
@@ -195,3 +202,7 @@ a{
 .pink{
 	background-color: rgb(193, 0, 97) !important;
 }
+.white{
+	background-color: white !important;
+}
+
